@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee | Place Order </title>
+    <link rel="stylesheet" href="placeOrder(emp).css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Place Order</h1>
+        </header>
+        <div class="content">
+            <div class="left-pane">
+                <input type="text" placeholder="Enter Customer Name Or Phone NO">
+                <button class="add-customer">Add Customer</button>
+            </div>
+            <div class="main-pane">
+                <div class="search-bar">
+                    <input type="text" placeholder="🔍Search item here...">
+                </div>
+                <div class="categories">
+                    <button class="category-button">Burgers🍔</button>
+                    <button class="category-button">Submarines🌭</button>
+                    <button class="category-button">Fries🍟</button>
+                    <button class="category-button">Pasta🍜</button>
+                    <button class="category-button">Chicken🍗</button>
+                    <button class="category-button">Beverages🧋</button>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <img src="img/classic bur L.jpg" alt="Classic Burger Large">
+                        <h3>Classic Burger Large</h3>
+                        <p>750.00 LKR</p>
+                        <button class="item-button">-  0  +</button>
+                    </div>
+                    <div class="item">
+                        <div class="label">15% OFF</div>   
+                            <img src="img/classic bur Reg.jpg" alt="Cheese Burger Regular">
+                            <h3>Cheese Burger Regular</h3>
+                            <p>650.00 LKR</p>
+                            <button class="item-button">-   0   +</button> 
+                    </div>
+                    <div class="item">
+                        <img src="img/turkey bur.jpg" alt="Turkey Burger">
+                        <h3>Turkey Burger</h3>
+                        <p>1000.00 LKR</p>
+                        <button class="item-button">- 0 +</button>
+                    </div>
+                    <div class="item">
+                        <img src="img/chicken bur.jpg" alt="Chicken Burger Large">
+                        <h3>Chicken Burger Large</h3>
+                        <p>1400.00 LKR</p>
+                        <button class="item-button">- 0 +</button>
+                    </div>
+                    <div class="item">
+                        <div class="label">20% OFF</div>   
+                            <img src="img/chicken bur.jpg" alt="Chicken Burger Regular">
+                            <h3>Chicken Burger Regular</h3>
+                            <p>600.00 LKR</p>
+                            <button class="item-button">- 0 +</button>
+                    </div>
+                    <div class="item">
+                        <img src="img/cheese bur.jpg" alt="Cheese Burger Large">
+                        <h3>Cheese Burger Large</h3>
+                        <p>1000.00 LKR</p>
+                        <button class="item-button">- 0 +</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-pane">
+                <h2>Selected Items</h2>
+                <div class="selected-items1"></div>
+                <div class="selected-items2"></div>
+                <div class="selected-items3"></div>
+                <div class="totals">
+                    <p>Sub Total: <span class="subtotal">0.00 LKR</span></p>
+                    <p>Discount: <span class="discount">0.00 LKR</span></p>
+                    <p>Total Payment: <span class="total">0.00 LKR</span></p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <button class="back-button">Back</button>
+            <button class="place-order-button">Place Order</button>
+        </footer>
+    </div>
+</body>
+</html>

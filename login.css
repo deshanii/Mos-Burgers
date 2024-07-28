@@ -1,0 +1,169 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: url('img/Bgburger2.jpg') no-repeat center center/cover;
+    background-size: cover;
+}
+
+.container {
+    background: rgba(237, 215, 156, 0.515);   
+     padding: 50px;
+    border-radius: 15px;
+    width: 40%;
+    /* position: absolute; */
+    text-align: center;
+    height: 35%;
+    left: 112px;
+    top: 253px;
+    border-radius: 10px;
+    
+}
+
+.tab-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+
+    position: absolute;
+    width: 180px;
+    height: 55px;
+    left: 180px;
+    top: 42px;
+
+    background: #D9D9D9;
+    border-radius: 100px;
+
+
+    font-family: 'Atma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    color: #000000;
+
+    padding: 5px 20px;
+
+}
+
+.tab.active {
+    background-color: #ccc;
+    position: absolute;
+    width: 180px;
+    height: 55px;
+    left: 34px;
+    top: 42px;
+
+    background: #FBBD44;
+    border-radius: 100px;
+
+}
+
+.tab:not(.active):hover {
+    background-color: #e2e2e2;
+}
+
+.form-container {
+    /* background: rgba(255, 255, 255, 0.9); */
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+.form-container.active {
+    display: block;
+}
+
+.form-group {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.form-group label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.form-group input {
+    width: calc(80% - 160px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    margin: 20px;
+}
+
+.button-container {
+   position: absolute;
+    margin-top: 290px;
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 0px 80px;
+}
+
+.nav-button {
+    
+    background-color: #d48d12;
+    padding: 5px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    outline: none;
+    width: 150px;
+    height: 40px;
+    font-size: 19px;
+    /* font-family: 'Atma'; */
+     font-style: 'Atma'; 
+    color: rgb(231, 216, 206);
+    text-align: center;
+   border-bottom: #000000;
+   top: 990px;
+    font-weight: bold;
+}
+
+.next {
+
+
+position: absolute; 
+width: 274px;
+height: 78px;
+left: 799px;
+
+}
+
+.back {
+   
+box-sizing: border-box;
+
+position: absolute; 
+width: 266px;
+height: 74px;
+right:  370px;
+
+
+ 
+} 
+
+.nav-button:active {
+    transform: scale(1.1);
+}
+
+
+

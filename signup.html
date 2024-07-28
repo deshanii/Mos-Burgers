@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Signup Form</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tab-container">
+            <button class="tab" onclick="showLoginForm()">Login</button>
+            <button class="tab active" onclick="showSignupForm()">Signup</button>
+        </div>
+        <div class="form-container" id="login-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password :</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="button-container">
+                    <button type="button" class="nav-button">Back</button>
+                    <button type="submit" class="nav-button2">Next</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-container active" id="signup-form">
+            <form>
+                <div class="form-group">
+                    <label for="fullname">Full name :</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact No :</label>
+                    <input type="text" id="contact" name="contact">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email        :</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="password-signup">Password :</label>
+                    <input type="password" id="password-signup" name="password">
+                </div>
+                <div class="button-container">
+                    <div class="back">
+                    <button type="button" class="nav-button">Back</button>
+                </div>
+                <div class="next">
+                    <button type="submit" class="nav-button">Next</button>
+                </div>
+                </div>    
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

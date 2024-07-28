@@ -1,0 +1,96 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: url('img/Bgburger2.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+header h1 {
+    background-color: #f18f0f;
+    padding: 10px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.add-customer {
+    background-color: #ffa500;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.customer-list {
+    flex: 1;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.customer {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.logout-button, .back-button {
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}

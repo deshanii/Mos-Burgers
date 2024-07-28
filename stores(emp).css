@@ -1,0 +1,114 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: url('img/Bgburger2.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1400px;
+    text-align: center;
+}
+
+header h1 {
+    background-color: #f1c40f;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.category-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category-button {
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.category-button.active {
+    background-color: #ffa500;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+    width: 22%;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.item p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.item.add-new {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #ffa500;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logout-button {
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}

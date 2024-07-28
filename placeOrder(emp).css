@@ -1,0 +1,248 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: url('img/Bgburger2.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .container {
+    background: rgba(237, 215, 156, 0.553);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    height: 80%;
+    text-align: center;
+} */
+
+header h1 {
+    background-color: #f18f0f;
+    padding: 10px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 100px;
+   
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.left-pane, .right-pane, .main-pane {
+    
+    background: rgba(237, 215, 156, 0.553);
+    padding: 20px;
+    border-radius: 10px;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+.left-pane {
+    flex: 1;
+    margin-right: 10px;
+   
+}
+
+.left-pane input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+  
+}
+
+.add-customer {
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    
+}
+
+.add-customer:active {
+    transform: scale(1.1);
+}
+
+.main-pane {
+    flex: 3;
+    margin: 0 10px;
+}
+
+.search-bar input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.category-button {
+    background-color: #a9a79f;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+    font-size: 16px;
+}
+
+.category-button:hover {
+    background: #f18f0f;
+}
+
+.category-button:active {
+    transform: scale(1.1);
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.item img {
+    width: 70px;
+    height: 65px;
+    border-radius: 10px;
+}
+
+.item h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.item p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.item-button {
+    background-color: #89877c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    height: 20px;
+
+}
+
+.label{
+    background-color: #f1c40f;
+    width: 80px;
+    height: 18px;
+    font-size: 12px;
+    
+}
+
+.right-pane {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.right-pane h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+.selected-items1 {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+    height: 50px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    top: 220px;
+}
+
+.selected-items2 {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+    height: 50px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    top: 352px;
+}
+
+.selected-items3 {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+    height: 50px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    top:490px;
+}
+
+.totals p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.back-button {
+    position: absolute;
+    background-color: #d48d12;
+    padding: 5px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 150px;
+     height: 40px;
+    font-size: 19px;
+    font-style: 'Atma'; 
+    color: rgb(231, 216, 206);
+    text-align: center;
+    font-weight: bold;
+    left: 20px;
+    top: 750px;
+}
+.place-order-button{
+    position: absolute;
+    background-color: #d46912;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 19px;
+    font-style: 'Atma'; 
+    color: rgb(231, 216, 206);
+    text-align: center;
+    font-weight: bold;
+    left: 1350px;
+    top: 750px;
+}
+
+

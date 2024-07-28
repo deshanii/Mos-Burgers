@@ -1,0 +1,100 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: url('img/Bgburger2.jpg') no-repeat center center/cover;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 15px;
+    flex-direction: row;
+    width: 80%;
+    height:75%;
+}
+
+.welcome-section, .start-section {
+    background: rgba(237, 215, 156, 0.515);
+    padding: 80px;
+    border-radius: 10px;
+    text-align: center;
+    width: 35%;
+    height:80%;
+}
+
+.welcome-section h1 {
+    margin: 0;
+    /* font-size: 2.5em; */
+    font-family: 'Bad Script';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 64px;
+/* l   ine-height: 126px; */
+}
+
+.welcome-section h1 span {
+    /* font-size: 2em; */
+    font-weight: bold;
+
+    position: absolute;
+    width: 211px;
+    height: 248px;
+    left: 200px;
+    top: 313px;
+
+    font-family: 'Bad Script';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 300px;
+
+
+}
+
+.start-section h2 {
+    /* color: #4B3914; */
+    padding: 70px;
+    margin: 0 0 20px 0;
+    font-size: 40px;
+    font-family: 'Algerian';
+}
+
+.button {
+    background: #9b9d9df5;
+    display: block;
+    width: 100%;
+    margin: 20px ;
+    padding: 20px;
+    font-size: 30px;
+    border-bottom-color: #0a0a0a;
+    border-radius: 50px;
+    cursor: pointer;
+    border-width: 5px;
+    border-right:#0a0a0a ;
+    border-left: #0a0a0a;
+    font-family: 'Britannic Bold';
+
+}
+
+.button:hover {
+    background: #f18f0f;
+}
+
+
+.button:active {
+    transform: scale(1.1);
+}
+.leftPanel{
+    margin-top: 20%;
+
+}
+
