@@ -32,7 +32,7 @@ body, html {
 }
 
 .tab {
-    background-color: #f1c40f;
+    /* background-color: #f1c40f; */
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -43,7 +43,7 @@ body, html {
     position: absolute;
     width: 180px;
     height: 55px;
-    left: 180px;
+    left: 175px;
     top: 42px;
 
     background: #D9D9D9;
@@ -62,7 +62,7 @@ body, html {
 }
 
 .tab.active {
-    background-color: #ccc;
+    /* background-color: #ccc; */
     position: absolute;
     width: 180px;
     height: 55px;
@@ -74,8 +74,8 @@ body, html {
 
 }
 
-.tab:not(.active):hover {
-    background-color: #e2e2e2;
+.tab:hover {
+    background: #FBBD44;
 }
 
 .form-container {

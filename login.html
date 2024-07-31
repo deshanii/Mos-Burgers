@@ -10,7 +10,7 @@
     <div class="container">
         <div class="tab-container">
             <button class="tab active">Login</button>
-            <button class="tab">Signup</button>
+            <button class="tab" onClick=openEmpSignup()>Signup</button>
         </div>
         <div class="form-container">
             <form>
@@ -25,14 +25,15 @@
             </form>
                 <div class="button-container">
                     <div class="back">
-                    <button type="button" class="nav-button">Back</button>
+                    <button type="button" class="nav-button" onClick=openMainWindow()>Back</button>
                 </div>
                 <div class="next">
-                    <button type="submit" class="nav-button">Next</button>
+                    <button type="submit" class="nav-button" onClick=openHomePage()>Next</button>
                 </div>
                 </div>
             </form>
         </div>
     </div>
+    <script src="login.js"></script>
 </body>
 </html>
