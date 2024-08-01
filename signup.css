@@ -72,13 +72,6 @@ body, html {
     background-color: #e2e2e2;
 }
 
-.form-container {
-    /* background: rgba(255, 255, 255, 0.9); */
-    padding: 20px;
-    border-radius: 10px;
-    display: none;
-}
-
 .form-container.active {
     display: block;
 }
@@ -106,28 +99,28 @@ body, html {
 
 .button-container {
     position: absolute;
-     margin-top: 290px;
-     display: flex;
-     justify-content: space-between;
-     padding: 0px 80px;
+    margin-top: 290px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
  }
  
  .nav-button {
-     position: absolute;
-     background-color: #d48d12;
-     padding: 5px 20px;
-     border-radius: 50px;
-     cursor: pointer;
-     transition: transform 0.2s ease;
-     outline: none;
-     width: 150px;
-     height: 40px;
-     font-size: 19px;
-     /* font-family: 'Atma'; */
-     font-style: 'Atma'; 
-     color: rgb(231, 216, 206);
-     text-align: center;
-     bottom: 155px;
+    position: absolute;
+    background-color: #d48d12;
+    padding: 5px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    outline: none;
+    width: 150px;
+    height: 40px;
+    font-size: 19px;
+    /* font-family: 'Atma'; */
+    font-style: 'Atma'; 
+    color: rgb(231, 216, 206);
+    text-align: center;
+    bottom: 155px;
     font-weight: bold;
        
  }
@@ -148,9 +141,7 @@ body, html {
     width: 266px;
     height: 74px;
     right:  450px;
-    
- 
-  
+     
  } 
 
 .nav-button:active {
