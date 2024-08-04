@@ -11,8 +11,8 @@ body, html {
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 15px;
+    /* background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px; */
     padding: 20px;
     width: 90%;
     max-width: 1200px;
@@ -20,12 +20,15 @@ body, html {
 }
 
 header h1 {
+    position: absolute;
     background-color: #f18f0f;
     padding: 10px;
     font-size: 28px;
     text-align: center;
     margin-bottom: 100px;
+    top: 7px;
     width: 100%;
+    right: 10px;
 }
 
 .content {
@@ -41,22 +44,29 @@ header h1 {
 
 .input-group {
     margin-bottom: 20px;
+   
+
 }
 
 .input-group label {
+    /* position: absolute; */
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
 .input-group input {
-    width: 100%;
-    padding: 10px;
+    position: absolute;
+    width: 520px;
+    padding: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    left: 100px;
+    margin: 30px 0px;
 }
 
 .add-customer {
+    position: absolute;
     background-color: #ffa500;
     border: none;
     padding: 10px;
@@ -64,20 +74,37 @@ header h1 {
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
+    left: 95px;
+    top: 600px;
 }
 
-.customer-list {
+.customer-list { 
+    position:absolute;
     flex: 1;
-    margin: 0 10px;
+    margin: 0 40px;
     text-align: left;
+    width: 520px;
+height: 240px;
+left: 884px;
+/* background: #D9D9D9;
+opacity: 0.8;
+border-radius: 10px; */
+top: 150px;
+
+
+
+
 }
 
 .customer {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 10px;
-    margin: 10px 0;
+    margin: 30px 0;
     font-size: 16px;
+    width: 500px;
+    height: 70px;
+    opacity: 0.8;
 }
 
 footer {
@@ -86,11 +113,19 @@ footer {
     margin-top: 20px;
 }
 
-.logout-button, .back-button {
-    background-color: #f1c40f;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
+.back-button {
+    position: absolute;
+    background-color: #d48d12;
+    padding: 5px 20px;
+    border-radius: 50px;
     cursor: pointer;
-    font-size: 16px;
+    width: 150px;
+     height: 40px;
+    font-size: 19px;
+    font-style: 'Atma'; 
+    color: rgb(231, 216, 206);
+    text-align: center;
+    font-weight: bold;
+    top:760px;
+    left: 30px;
 }
