@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
 body, html {
     margin: 0;
     padding: 0;
@@ -145,12 +149,12 @@ header h1 {
 }
 
 .item-button {
-    background-color: #89877c;
+    background-color: #2c9f43;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    width: 100%;
-    height: 20px;
+    width: 20%;
+    height: 30px;
 
 }
 
@@ -173,17 +177,17 @@ header h1 {
 }
 
 
-.selected-items1 {
-    background: rgba(255, 255, 255, 0.9);
+.selected-items {
+    background: rgba(255, 255, 255, 0.692);
     border-radius: 5px;
     padding: 10px;
-    height: 50px;
+    height: 330px;
     overflow-y: auto;
     margin-bottom: 20px;
     top: 220px;
 }
 
-.selected-items2 {
+/* .selected-items2 {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 5px;
     padding: 10px;
@@ -201,7 +205,7 @@ header h1 {
     overflow-y: auto;
     margin-bottom: 20px;
     top:490px;
-}
+} */
 
 .totals p {
     font-size: 16px;
@@ -245,4 +249,41 @@ footer {
     top: 750px;
 }
 
+ /* .card{
+    width : 190px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    padding: 10px 1rem;
+    border-radius: 10px;
+    background: var(--accent-color);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: var(--text-color);
+}
+.card--price{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 
+}
+
+.card--price .price{
+    color: var(--primary-color);
+    font-weight: 600;
+} */
+
+/* .add-to-cart{
+    background: var(--primary-color);
+    color: var(--accent-color);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    align-items: center;
+}
+.add-to-cart:hover{
+    color:var(--accent-color);
+    box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231, 236, 236) 0px 0px 0px 3px;
+}  */
