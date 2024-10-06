@@ -33,7 +33,7 @@ body, html {
 
 .welcome-section h1 {
     margin: 0;
-    /* font-size: 2.5em; */
+    
     font-family: 'Bad Script';
     font-style: italic;
     font-weight: 400;
@@ -43,9 +43,7 @@ body, html {
 }
 
 .welcome-section h1 span {
-    /* font-size: 2em; */
-    /* font-weight: bold; */
-
+    
     position: absolute;
     width: 211px;
     height: 248px;
@@ -74,8 +72,7 @@ body, html {
     padding: 10px 50px;
     border-radius: 50px;
     cursor: pointer;
-    /* border-color: brown; */
-    /* transition: background-color 0.3s ease, transform 0.2s ease; */
+   
     width: 80%;
     margin: 35px ;
     font-size: 20px;
