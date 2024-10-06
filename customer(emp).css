@@ -73,11 +73,7 @@ header h1 {
     background-color: #e69500;
 }
 
-/* .customer-list {
-    flex: 1;
-    max-height: 400px;
-    overflow-y: auto;
-} */
+
 
 .customer {
     background: rgba(255, 255, 255, 0.9);
