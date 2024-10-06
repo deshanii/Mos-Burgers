@@ -1,85 +1,118 @@
+
 openHomePage=()=>{
-    window.open("homePage.html","_self")
+         window.open("homePage.html","_self")
+     }
+
+     openCustomerPage=()=>{
+    window.open("customer(emp).html","_self")
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const addButtons = document.querySelectorAll('.item-button');
-    const selectedItemList = document.querySelector('.selected-items');
-    const total = document.querySelector('.total');
+
+let cart = [];
 
 
-    let selectedItems = [];
-    let totals=0;
+function addToCart(itemName, price) {
+    const item = {
+        name: itemName,
+        price: parseFloat(price),
+        quantity: 1
+    };
 
-    addButtons.forEach((button , index) =>{
-        button.addEventListener('click' , () =>{
-            const item ={
-                name : document.querySelectorAll('.item .item-title')[index].textContent,
-                price : parseFloat(
-                    document.querySelectorAll('.price')[index].textContent.slice(1),
-                ),
-                quantity :1,
-            };
+    const existingItem = cart.find(cartItem => cartItem.name === itemName);
+    
+    if (existingItem) {
+        existingItem.quantity++;
+    } else {
+        cart.push(item);
+    }
+    
+    updateCartDisplay();
+    updateTotals();
+}
 
-            const exisitingItem = selectedItems.find(
-                (selectedItem) => selectedItem.name === item.name,
-            );
-            if(exisitingItem){
-                exisitingItem.quantity++;
-            }else{
-                selectedItems.push(item);
-            }
+function updateCartDisplay() {
+    const selectedItemsDiv = document.querySelector('.selected-items');
+    selectedItemsDiv.innerHTML = ''; 
 
-            totals += item.price;
+    cart.forEach(item => {
+        const itemDiv = document.createElement('div');
+        itemDiv.classList.add('cart-item');
+        itemDiv.innerHTML = `
+            ${item.name} - Rs: ${item.price} x ${item.quantity} 
+            <button class="remove-item" onclick="removeFromCart('${item.name}')">Remove</button>
+        `;
+        selectedItemsDiv.appendChild(itemDiv);
+    });
+}
 
-            updateCartUI();
-        });
+function removeFromCart(itemName) {
+    cart = cart.filter(item => item.name !== itemName);
+    updateCartDisplay();
+    updateTotals();
+}
 
-        function updateCartUI(){
-            // updateCartItemCount(selectedItems.length);
-            updateCartItemList();
-            updatecartTotal();
+function updateTotals() {
+    let subtotal = 0;
+    let discount = 0;
+    
+    cart.forEach(item => {
+        subtotal += item.price * item.quantity;
+        
+        if (item.name === 'Cheese Burger Regular') {
+            discount += (item.price * item.quantity) * 0.15;
+        } else if (item.name === 'Chicken Burger Regular') {
+            discount += (item.price * item.quantity) * 0.20;
         }
-
-        // function updateCartItemCount(count){
-        //     CartItemCount.textContent = count;
-        // }
-
-        function updateCartItemList(){
-            selectedItemList.innerHTML = '';
-            selectedItems.forEach((item, index) => {
-                const selectedItem = document.createElement('div');
-                selectedItem.classList.add('selected-items');
-                selectedItem.innerHTML = `
-                <p>($(item.quantity)*)$(item.name)</p>
-                <p class="price">RS:${(
-                    item.price * item.quantity
-                ).toFixed(2)}
-
-                <button class="remove-item" data-index="${index}"><i class="fa-solid fa-times"</i></button>
-                </p>
-                `;
-                selectedItemList.appendChild(selectedItem);
-            });
-
-            const removeButtons = document.querySelectorAll('.remove-item');
-            removeButtons.forEach((button) =>{
-                button.addEventListener('click',(event)=>{
-                    const index = event.target.dataset.index;
-                    removeItemFromCart(index);
-                });
-            });
-        }
-
-        function removeItemFromCart(index){
-            const removeItem = selectedItems.splice(index, 1)[0];
-            totals -= removeItem.price * removeItem.quantity;
-            updateCartUI();
-        }
-        function updatecartTotal(){
-            total.textContent= `$${totals.toFixed(2)}`;
-        }
-
     });
 
+    const totalPayment = subtotal - discount;
+
+    document.querySelector('.subtotal').textContent = `${subtotal.toFixed(2)} LKR`;
+    document.querySelector('.discount').textContent = `${discount.toFixed(2)} LKR`;
+    document.querySelector('.total').textContent = `${totalPayment.toFixed(2)} LKR`;
+}
+
+
+
+function placeOrder() {
+    if (cart.length === 0) {
+        alert("Cart is empty. Please add items before placing an order.");
+        return;
+    }
+
+    const orderDetails = {
+        cartItems: cart,
+        subtotal: document.querySelector('.subtotal').textContent,
+        discount: document.querySelector('.discount').textContent,
+        total: document.querySelector('.total').textContent
+    };
+
+    localStorage.setItem('orderDetails', JSON.stringify(orderDetails));
+
+    window.open('bill.html', '_blank');
+    
+    cart = [];
+    updateCartDisplay();
+    updateTotals();
+}
+
+
+
+document.querySelectorAll('.item-button').forEach((button, index) => {
+    button.addEventListener('click', function() {
+        const itemElement = this.parentElement;
+        const itemName = itemElement.querySelector('.item-title').textContent;
+        const price = itemElement.querySelector('.price').textContent.replace('Rs: ', '');
+        addToCart(itemName, price);
+    });
 });
+
+document.querySelector('.place-order-button').addEventListener('click', placeOrder);
+
+
+
+
+
+
+
+

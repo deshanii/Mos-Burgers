@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .bill-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .bill-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .bill-items {
+            margin-bottom: 20px;
+        }
+        .bill-item {
+            display: flex;
+            justify-content: space-between;
+        }
+        .totals {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bill-container">
+        <h1 class="bill-header">Order Bill</h1>
+        <div class="bill-items" id="bill-items"></div>
+        <div class="totals">
+            <p>Subtotal: <span id="subtotal"></span></p>
+            <p>Discount: <span id="discount"></span></p>
+            <p>Total Payment: <span id="total"></span></p>
+        </div>
+    </div>
+
+    <script>
+        
+        const orderDetails = JSON.parse(localStorage.getItem('orderDetails'));
+
+        if (orderDetails) {
+            
+            const billItemsDiv = document.getElementById('bill-items');
+            orderDetails.cartItems.forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.classList.add('bill-item');
+                itemDiv.innerHTML = `${item.name} x ${item.quantity} - Rs: ${(item.price * item.quantity).toFixed(2)}`;
+                billItemsDiv.appendChild(itemDiv);
+            });
+
+            
+            document.getElementById('subtotal').textContent = orderDetails.subtotal;
+            document.getElementById('discount').textContent = orderDetails.discount;
+            document.getElementById('total').textContent = orderDetails.total;
+        }
+    </script>
+
+</body>
+</html>

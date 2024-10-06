@@ -1,3 +1,4 @@
+<!-- Updated HTML for Stores Page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,34 +22,21 @@
                 <button class="category-button">🧋Beverages</button>
             </div>
             <div class="search-bar">
-                <input type="text" placeholder="Search item here...">
+                <input type="text" id="searchInput" placeholder="Search item here...">
             </div>
-            <div class="items">
-                <!-- -->
-                <div class="item">
-                    <img src="burger1.png" alt="Classic Burger Large">
-                    <h3>Classic Burger Large</h3>
-                    <p>750.00 LKR</p>
-                </div>
-                <div class="item">
-                    <img src="burger2.png" alt="Classic Burger Regular">
-                    <h3>Classic Burger Regular</h3>
-                    <p>650.00 LKR</p>
-                </div>
-                <div class="item">
-                    <img src="burger3.png" alt="Turkey Burger">
-                    <h3>Turkey Burger</h3>
-                    <p>1000.00 LKR</p>
-                </div>
-                <!---->
-                <div class="item add-new">
+            <div class="items" id="itemsContainer">
+               
+
+                <div class="item add-new" id="addNewItem">
                     <span>+</span>
                 </div>
             </div>
         </div>
         <footer>
-            <button class="logout-button">Back</button>
+            <button class="logout-button" onClick=openPlaceOrderPage()>Back</button>
+           
         </footer>
     </div>
+    <script src="stores(emp).js"></script> 
 </body>
 </html>

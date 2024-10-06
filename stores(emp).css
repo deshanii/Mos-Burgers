@@ -17,6 +17,7 @@ body, html {
     width: 90%;
     max-width: 1400px;
     text-align: center;
+    height: 700px;
 }
 
 header h1 {
@@ -75,7 +76,11 @@ header h1 {
 }
 
 .item img {
-    width: 100%;
+    /* width: 100%;
+    border-radius: 10px; */
+
+    width: 70px;
+    height: 65px;
     border-radius: 10px;
 }
 

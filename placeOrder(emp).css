@@ -130,6 +130,7 @@ header h1 {
     width: 30%;
     margin-bottom: 20px;
     text-align: center;
+    overflow-y: auto;
 }
 
 .item img {
@@ -187,25 +188,6 @@ header h1 {
     top: 220px;
 }
 
-/* .selected-items2 {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 5px;
-    padding: 10px;
-    height: 50px;
-    overflow-y: auto;
-    margin-bottom: 20px;
-    top: 352px;
-}
-
-.selected-items3 {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 5px;
-    padding: 10px;
-    height: 50px;
-    overflow-y: auto;
-    margin-bottom: 20px;
-    top:490px;
-} */
 
 .totals p {
     font-size: 16px;
@@ -249,41 +231,28 @@ footer {
     top: 750px;
 }
 
- /* .card{
-    width : 190px;
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-    gap:10px;
-    padding: 10px 1rem;
-    border-radius: 10px;
-    background: var(--accent-color);
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: var(--text-color);
-}
-.card--price{
-    display:flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
+ 
 
-}
-
-.card--price .price{
-    color: var(--primary-color);
-    font-weight: 600;
-} */
-
-/* .add-to-cart{
-    background: var(--primary-color);
-    color: var(--accent-color);
-    border-radius: 50%;
-    padding: 5px;
+.remove-item{
+    background: rgb(171, 26, 26);
+    color: #ccc;
+    border-radius: 5px;
+    padding: 2px 8px;
     cursor: pointer;
-    align-items: center;
+    margin-left: 5px;
+    height: 20px;
+   
 }
-.add-to-cart:hover{
-    color:var(--accent-color);
-    box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231, 236, 236) 0px 0px 0px 3px;
-}  */
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.card-main-placeOrder {
+    height: 400px;
+    overflow-y: auto;
+}
